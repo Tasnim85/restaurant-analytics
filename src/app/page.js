@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import LoginForm from '@/components/log'
 
 export default function Home() {
+  const [role, setRole] = useState("manager");
   const router = useRouter()
 
   const handleLogin = (email, password) => {
